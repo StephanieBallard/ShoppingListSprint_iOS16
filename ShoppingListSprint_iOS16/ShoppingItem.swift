@@ -11,4 +11,11 @@ import Foundation
 struct ShopingItem {
     var name: String
     var hasBeenAdded: Bool
+    
+//    var foodImage: String {
+//        UIImage(name: String)
+//    }
 }
+
+
+

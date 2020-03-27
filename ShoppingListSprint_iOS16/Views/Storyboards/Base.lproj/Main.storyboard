@@ -75,6 +75,11 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imageView" destination="Y4g-et-nKq" id="J4T-gD-axr"/>
+                                    <outlet property="isAddedLabel" destination="0hb-n9-qwO" id="zkX-XR-JP0"/>
+                                    <outlet property="itemLabel" destination="3VH-Ol-KRc" id="NNc-Ia-y3S"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -85,6 +90,7 @@
                     <navigationItem key="navigationItem" title="Shopping List" id="oCM-bc-QxW">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="wMq-ha-8B2">
                             <connections>
+                                <action selector="nextButtonTapped:" destination="8cQ-xD-v5D" id="htF-x5-Ud7"/>
                                 <segue destination="smQ-K6-SUg" kind="show" identifier="SendOrderShowSegue" id="YEf-fg-vq2"/>
                             </connections>
                         </barButtonItem>
@@ -124,6 +130,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVs-yL-gg0">
                                         <rect key="frame" x="0.0" y="133" width="374" height="30"/>
                                         <state key="normal" title="Send Order"/>
+                                        <connections>
+                                            <action selector="sendOrderButtonTapped:" destination="smQ-K6-SUg" eventType="touchUpInside" id="FxW-OG-U7B"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,6 +146,11 @@
                         <viewLayoutGuide key="safeArea" id="K2d-H8-pUf"/>
                     </view>
                     <navigationItem key="navigationItem" id="aPe-Uk-nd0"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="qNq-Z2-L7y" id="WEp-Bv-0Ts"/>
+                        <outlet property="itemsInCartLabel" destination="p3z-Au-Ct1" id="F7Q-gE-yMr"/>
+                        <outlet property="nameTextField" destination="snn-3f-fBf" id="8oH-2P-FpE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSA-JB-M7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
