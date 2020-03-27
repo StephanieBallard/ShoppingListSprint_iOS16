@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ShoppingItem {
+struct ShoppingItem: Codable {
     var name: String
     var hasBeenAdded: Bool = false
     var imageName: UIImage

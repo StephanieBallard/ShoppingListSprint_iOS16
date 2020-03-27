@@ -6,7 +6,7 @@
 //  Copyright © 2020 Stephanie Ballard. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ShoppingListController {
     
@@ -14,5 +14,55 @@ class ShoppingListController {
 
     var shoppingItems: [ShoppingItem] = []
     
+    init() {
+        loadFromPersistentStore()
+    }
     
+    func createItem(name: String, hasBeenAdded: Bool, imageName: UIImage) {
+        let shoppingItem = ShoppingItem(name: name, hasBeenAdded: hasBeenAdded, imageName: imageName)
+        shoppingItems.append(shoppingItem)
+        saveToPersistentStore()
+    }
+    
+    var persistentFileURL: URL? {
+        let fileManager = FileManager.default
+        let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
+        let itemsURL = documentsDir?.appendingPathComponent("items.plist")
+        return itemsURL
+    }
+    
+    func saveToPersistentStore() {
+        guard let persistentFileURL = persistentFileURL else { return }
+        
+        do {
+            
+            let encoder = PropertyListEncoder()
+            let itemsPlist = try encoder.encode(shoppingItems)
+            
+            try itemsPlist.write(to: persistentFileURL)
+            
+        } catch {
+            print("Error saving items: \(error)")
+        }
+    }
+    
+    func loadFromPersistentStore() {
+        guard let persistentFileURL = persistentFileURL else { return }
+        
+        do {
+            
+            let decoder = PropertyListDecoder()
+            let itemsPlist = try Data(contentsOf: persistentFileURL)
+            
+            let items = try decoder.decode([ShoppingItem].self, from: itemsPlist)
+            self.shoppingItems = items
+            
+        } catch {
+            print("Error decoding items: \(error)")
+        }
+    }
+}
+
+extension String {
+    static var hasBeenAddedKey = "hasBeenAdded"
 }
