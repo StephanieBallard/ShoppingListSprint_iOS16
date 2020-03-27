@@ -6,16 +6,18 @@
 //  Copyright © 2020 Stephanie Ballard. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct ShopingItem {
     var name: String
-    var hasBeenAdded: Bool
+    var hasBeenAdded: Bool = false
+    var imageName: UIImage
     
-//    var foodImage: String {
-//        UIImage(name: String)
-//    }
+    var foodImage: UIImage {
+        return UIImage(named: name)!
+    }
 }
 
 
 
+    

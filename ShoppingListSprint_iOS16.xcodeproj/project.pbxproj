@@ -17,6 +17,7 @@
 		5A363D44242E5C83002A3627 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */; };
 		5A363D46242E5EA1002A3627 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A363D45242E5EA1002A3627 /* ShoppingItem.swift */; };
 		5ADF07D8242E696900E0074E /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF07D7242E696900E0074E /* ShoppingListController.swift */; };
+		5ADF07DA242E6DFB00E0074E /* ItemsAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF07D9242E6DFB00E0074E /* ItemsAvailable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailViewController.swift; path = ShoppingListSprint_iOS16/Views/OrderDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		5A363D45242E5EA1002A3627 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingItem.swift; path = ShoppingListSprint_iOS16/ShoppingItem.swift; sourceTree = SOURCE_ROOT; };
 		5ADF07D7242E696900E0074E /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingListController.swift; path = ShoppingListSprint_iOS16/Controllers/ShoppingListController.swift; sourceTree = SOURCE_ROOT; };
+		5ADF07D9242E6DFB00E0074E /* ItemsAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsAvailable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				5A363D3C242E52EE002A3627 /* Model */,
 				5A363D45242E5EA1002A3627 /* ShoppingItem.swift */,
+				5ADF07D9242E6DFB00E0074E /* ItemsAvailable.swift */,
 				5A363D3A242E52C1002A3627 /* Views */,
 				5A363D3D242E52FB002A3627 /* Controllers */,
 				5A363D3B242E52D3002A3627 /* Resources */,
@@ -192,6 +195,7 @@
 			files = (
 				5A363D46242E5EA1002A3627 /* ShoppingItem.swift in Sources */,
 				5A363D27242E4EE2002A3627 /* AppDelegate.swift in Sources */,
+				5ADF07DA242E6DFB00E0074E /* ItemsAvailable.swift in Sources */,
 				5A363D42242E5C12002A3627 /* ShoppingItemCollectionViewCell.swift in Sources */,
 				5ADF07D8242E696900E0074E /* ShoppingListController.swift in Sources */,
 				5A363D3F242E5A18002A3627 /* ShoppingListCollectionViewController.swift in Sources */,
