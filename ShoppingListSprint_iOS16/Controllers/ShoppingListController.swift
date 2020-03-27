@@ -9,5 +9,5 @@
 import Foundation
 
 class ShoppingListController {
-    var shoppingItem: [ShoppingItem] = []
+    var shoppingItems: [ShoppingItem] = []
 }

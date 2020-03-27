@@ -60,7 +60,6 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
                                                 <constraint firstItem="cd8-28-ouP" firstAttribute="centerY" secondItem="fET-ov-bei" secondAttribute="centerY" id="6gL-c0-8Xr"/>
                                                 <constraint firstItem="cd8-28-ouP" firstAttribute="centerX" secondItem="fET-ov-bei" secondAttribute="centerX" id="LR0-W7-Y7j"/>

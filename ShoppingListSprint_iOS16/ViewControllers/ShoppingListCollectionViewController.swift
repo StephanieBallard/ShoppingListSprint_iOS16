@@ -31,15 +31,14 @@ class ShoppingListCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return shoppingListController.shoppingItem.count
+        return shoppingListController.shoppingItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShoppingItemCell", for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShoppingItemCell", for: indexPath) as? ShoppingItemCollectionViewCell else { return UICollectionViewCell() }
     
-        // Configure the cell
-    
+        let shoppingItem = shoppingListController.shoppingItems[indexPath.item]
+        cell.shoppingItem = shoppingItem
         return cell
     }
 
