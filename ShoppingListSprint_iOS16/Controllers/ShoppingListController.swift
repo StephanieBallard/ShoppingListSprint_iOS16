@@ -11,7 +11,7 @@ import UIKit
 class ShoppingListController {
     
     let itemNames = ["Apple", "Grapes", "Milk", "Muffin", "Popcorn", "Soda", "Strawberries"]
-
+    
     var shoppingItems: [ShoppingItem] = []
     
     init() {

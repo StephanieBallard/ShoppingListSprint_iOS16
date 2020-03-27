@@ -16,6 +16,7 @@
 		5A363D42242E5C12002A3627 /* ShoppingItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A363D41242E5C12002A3627 /* ShoppingItemCollectionViewCell.swift */; };
 		5A363D44242E5C83002A3627 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */; };
 		5A363D46242E5EA1002A3627 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A363D45242E5EA1002A3627 /* ShoppingItem.swift */; };
+		5AC51325242EADA600133478 /* ShoppingListSprint_iOS16.app in Resources */ = {isa = PBXBuildFile; fileRef = 5A363D23242E4EE2002A3627 /* ShoppingListSprint_iOS16.app */; };
 		5ADF07D8242E696900E0074E /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF07D7242E696900E0074E /* ShoppingListController.swift */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC51325242EADA600133478 /* ShoppingListSprint_iOS16.app in Resources */,
 				5A363D33242E4EE3002A3627 /* LaunchScreen.storyboard in Resources */,
 				5A363D30242E4EE3002A3627 /* Assets.xcassets in Resources */,
 				5A363D2E242E4EE2002A3627 /* Main.storyboard in Resources */,
