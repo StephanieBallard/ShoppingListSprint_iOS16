@@ -30,7 +30,7 @@
 		5A363D34242E4EE3002A3627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A363D3E242E5A18002A3627 /* ShoppingListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCollectionViewController.swift; sourceTree = "<group>"; };
 		5A363D41242E5C12002A3627 /* ShoppingItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingItemCollectionViewCell.swift; path = ShoppingListSprint_iOS16/Views/ShoppingItemCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailViewController.swift; path = ShoppingListSprint_iOS16/Views/OrderDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailViewController.swift; path = ShoppingListSprint_iOS16/ViewControllers/OrderDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		5A363D45242E5EA1002A3627 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingItem.swift; path = ShoppingListSprint_iOS16/ShoppingItem.swift; sourceTree = SOURCE_ROOT; };
 		5ADF07D7242E696900E0074E /* ShoppingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShoppingListController.swift; path = ShoppingListSprint_iOS16/Controllers/ShoppingListController.swift; sourceTree = SOURCE_ROOT; };
 		5ADF07D9242E6DFB00E0074E /* ItemsAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsAvailable.swift; sourceTree = "<group>"; };
@@ -70,7 +70,9 @@
 				5A363D45242E5EA1002A3627 /* ShoppingItem.swift */,
 				5ADF07D9242E6DFB00E0074E /* ItemsAvailable.swift */,
 				5A363D3A242E52C1002A3627 /* Views */,
+				5ADF07DB242E844F00E0074E /* ViewControllers */,
 				5A363D3D242E52FB002A3627 /* Controllers */,
+				5A363D40242E5A47002A3627 /* Storyboards */,
 				5A363D3B242E52D3002A3627 /* Resources */,
 				5A363D34242E4EE3002A3627 /* Info.plist */,
 			);
@@ -81,9 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				5A363D41242E5C12002A3627 /* ShoppingItemCollectionViewCell.swift */,
-				5A363D3E242E5A18002A3627 /* ShoppingListCollectionViewController.swift */,
-				5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */,
-				5A363D40242E5A47002A3627 /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +119,15 @@
 				5A363D31242E4EE3002A3627 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5ADF07DB242E844F00E0074E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5A363D3E242E5A18002A3627 /* ShoppingListCollectionViewController.swift */,
+				5A363D43242E5C83002A3627 /* OrderDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
