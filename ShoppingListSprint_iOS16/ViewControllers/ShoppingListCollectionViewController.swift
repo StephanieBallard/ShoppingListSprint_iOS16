@@ -45,6 +45,11 @@ class ShoppingListCollectionViewController: UICollectionViewController {
     }
 
     // MARK: UICollectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let isAdded = shoppingListController.shoppingItems[indexPath.item]
+        shoppingListController.shoppingItems.append(isAdded)
+    }
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

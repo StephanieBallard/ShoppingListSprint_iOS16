@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ShoppingListController {
+class ShoppingListController: Codable {
     
     let itemNames = ["Apple", "Grapes", "Milk", "Muffin", "Popcorn", "Soda", "Strawberries"]
     
-    var shoppingItems = [ShoppingItem]()
+    var shoppingItems: [ShoppingItem] = []
     
     init() {
         loadFromPersistentStore()
