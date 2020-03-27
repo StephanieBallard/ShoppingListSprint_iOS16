@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ShopingItem {
+struct ShoppingItem {
     var name: String
     var hasBeenAdded: Bool = false
     var imageName: UIImage
