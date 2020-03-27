@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Shopping List-->
         <scene sceneID="2nS-ac-SWc">
             <objects>
                 <collectionViewController id="8cQ-xD-v5D" sceneMemberID="viewController">
@@ -33,20 +33,26 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fET-ov-bei">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-28-ouP">
-                                                    <rect key="frame" x="8" y="9" width="160" height="188.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-28-ouP">
+                                                    <rect key="frame" x="32.5" y="4" width="135" height="192"/>
                                                     <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Added" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-n9-qwO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="Y4g-et-nKq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                                            <rect key="frame" x="0.0" y="28.5" width="135" height="135"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="160" id="87T-vO-wAL"/>
+                                                                <constraint firstAttribute="height" constant="135" id="87T-vO-wAL"/>
                                                                 <constraint firstAttribute="width" secondItem="Y4g-et-nKq" secondAttribute="height" multiplier="1:1" id="Gc1-3L-afg"/>
-                                                                <constraint firstAttribute="width" constant="160" id="WIA-aa-Efb"/>
+                                                                <constraint firstAttribute="width" constant="135" id="WIA-aa-Efb"/>
                                                                 <constraint firstAttribute="width" secondItem="Y4g-et-nKq" secondAttribute="height" multiplier="1:1" id="eyP-gu-jUV"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VH-Ol-KRc">
-                                                            <rect key="frame" x="0.0" y="168" width="160" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="171.5" width="135" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -55,6 +61,10 @@
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="cd8-28-ouP" firstAttribute="centerY" secondItem="fET-ov-bei" secondAttribute="centerY" id="6gL-c0-8Xr"/>
+                                                <constraint firstItem="cd8-28-ouP" firstAttribute="centerX" secondItem="fET-ov-bei" secondAttribute="centerX" id="LR0-W7-Y7j"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -66,13 +76,72 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
                             </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ya9-Cl-npk">
+                                <rect key="frame" x="214" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VPg-BZ-jrC">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-5j-cC3">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T2L-zD-mm7">
+                                                    <rect key="frame" x="32.5" y="4" width="135" height="192"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Added" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCT-dz-t6a">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="w93-qa-AGQ">
+                                                            <rect key="frame" x="0.0" y="28.5" width="135" height="135"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="6fL-Wz-uKp"/>
+                                                                <constraint firstAttribute="height" constant="135" id="CiL-l3-y3O"/>
+                                                                <constraint firstAttribute="width" secondItem="w93-qa-AGQ" secondAttribute="height" multiplier="1:1" id="Z4q-jD-geQ"/>
+                                                                <constraint firstAttribute="width" secondItem="w93-qa-AGQ" secondAttribute="height" multiplier="1:1" id="ltf-7B-uCR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-lQ-072">
+                                                            <rect key="frame" x="0.0" y="171.5" width="135" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="T2L-zD-mm7" firstAttribute="centerY" secondItem="Tcc-5j-cC3" secondAttribute="centerY" id="0Dd-Yz-ZWe"/>
+                                                <constraint firstItem="T2L-zD-mm7" firstAttribute="centerX" secondItem="Tcc-5j-cC3" secondAttribute="centerX" id="yaj-d7-J0t"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Tcc-5j-cC3" secondAttribute="bottom" id="Am7-Cg-fvY"/>
+                                        <constraint firstItem="Tcc-5j-cC3" firstAttribute="leading" secondItem="VPg-BZ-jrC" secondAttribute="leading" id="WMm-M2-Jzl"/>
+                                        <constraint firstItem="Tcc-5j-cC3" firstAttribute="top" secondItem="VPg-BZ-jrC" secondAttribute="top" id="aT7-S4-SSj"/>
+                                        <constraint firstAttribute="trailing" secondItem="Tcc-5j-cC3" secondAttribute="trailing" id="jpZ-Xt-0Ph"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="200" height="200"/>
+                            </collectionViewCell>
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="8cQ-xD-v5D" id="oYb-Br-eey"/>
                             <outlet property="delegate" destination="8cQ-xD-v5D" id="fZ0-NY-Pgv"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="oCM-bc-QxW"/>
+                    <navigationItem key="navigationItem" title="Shopping List" id="oCM-bc-QxW">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="wMq-ha-8B2">
+                            <connections>
+                                <segue destination="smQ-K6-SUg" kind="show" id="VyV-Jl-M5K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1o-Ow-Spn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +157,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="K2d-H8-pUf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aPe-Uk-nd0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSA-JB-M7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
