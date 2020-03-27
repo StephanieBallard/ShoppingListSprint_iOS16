@@ -26,8 +26,8 @@ class ShoppingListController: Codable {
     
     var persistentFileURL: URL? {
         let fileManager = FileManager.default
-        let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
-        let itemsURL = documentsDir?.appendingPathComponent("items.plist")
+        guard let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
+        let itemsURL = documentsDir.appendingPathComponent("items.plist")
         return itemsURL
     }
     
