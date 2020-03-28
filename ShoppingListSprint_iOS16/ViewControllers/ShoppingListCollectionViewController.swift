@@ -47,8 +47,9 @@ class ShoppingListCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let isAdded = shoppingListController.shoppingItems[indexPath.item]
-        shoppingListController.shoppingItems.append(isAdded)
+        let shoppingList = shoppingListController.shoppingItems[indexPath.item]
+        shoppingListController.updateIsAdded(shoppingList)
+        collectionView.reloadData()
     }
 
     /*
@@ -80,4 +81,10 @@ class ShoppingListCollectionViewController: UICollectionViewController {
     }
     */
 
+}
+
+extension ShoppingListCollectionViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 200)
+    }
 }
