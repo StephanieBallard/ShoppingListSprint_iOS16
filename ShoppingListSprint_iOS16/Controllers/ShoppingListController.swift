@@ -18,8 +18,8 @@ class ShoppingListController: Codable {
         loadFromPersistentStore()
     }
     
-    func createItem(name: String, hasBeenAdded: Bool, imageName: UIImage) {
-        let shoppingItem = ShoppingItem(name: name, hasBeenAdded: hasBeenAdded, imageName: imageName)
+    func createItem(name: String, hasBeenAdded: Bool) {
+        let shoppingItem = ShoppingItem(name: name, hasBeenAdded: hasBeenAdded)
         shoppingItems.append(shoppingItem)
         saveToPersistentStore()
     }
@@ -61,8 +61,4 @@ class ShoppingListController: Codable {
             print("Error decoding items: \(error)")
         }
     }
-}
-
-extension String {
-    static var hasBeenAddedKey = "hasBeenAdded"
 }

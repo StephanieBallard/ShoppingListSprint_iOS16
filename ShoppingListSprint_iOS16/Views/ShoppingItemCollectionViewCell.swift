@@ -23,7 +23,7 @@ class ShoppingItemCollectionViewCell: UICollectionViewCell {
     private func updateViews() {
         guard let shoppingItem = shoppingItem else { return }
         isAddedLabel.text = String(shoppingItem.hasBeenAdded)
-        imageView.image = shoppingItem.imageName
+        imageView.image = shoppingItem.foodImage
         itemLabel.text = shoppingItem.name
     }
 }
